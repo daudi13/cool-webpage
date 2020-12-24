@@ -1,0 +1,122 @@
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: url(./image/tarek-correa-WYKAm9kWEo8-unsplash.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  margin: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  position: relative;
+  height: 100%;
+}
+
+body .container {
+  margin: auto;
+  background: #000000;
+  padding: 3rem;
+  opacity: 0.6;
+  position: absolute;
+  width: 80vw;
+  height: 50vh;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 30px;
+}
+
+body h2 {
+  font-family: 'Roboto' sans-serif;
+}
+
+body p {
+  font-style: italic;
+}
+
+body form {
+  margin-top: 3rem;
+  width: 70%;
+}
+
+body form .form-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body form .form-box label {
+  text-transform: capitalize;
+  padding: 10px;
+}
+
+body form .form-box input {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  outline: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body form .form-box + .form-box {
+  margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+  body .form-box label {
+    display: none;
+  }
+}
+
+body .btn {
+  width: inherit;
+  margin-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+}
+
+body .btn button {
+  width: 40%;
+  margin: 0 auto;
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bolder;
+  opacity: 0.8;
+}
+
+body .btn:hover button {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  body button {
+    padding: 5px 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

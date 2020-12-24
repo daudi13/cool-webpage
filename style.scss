@@ -1,0 +1,108 @@
+*,
+*::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./image/tarek-correa-WYKAm9kWEo8-unsplash.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px; 
+    position: relative;
+    height: 100%;
+
+    .container {
+        margin: auto;
+        background: #000000;
+        padding: 3rem;
+        opacity: 0.6;
+        position: absolute;
+        width: 80vw;
+        height: 50vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+    }
+
+    h2 {
+        font-family: 'Roboto' sans-serif;
+    }
+
+    p {
+        font-style: italic
+    };
+
+    form {
+        margin-top: 3rem;
+        width: 70%;
+
+        .form-box {
+            display: flex;
+
+
+            label{
+                text-transform: capitalize;
+                padding: 10px ;
+            }
+
+            input {
+                padding: 5px 10px;
+                border-radius: 10px;
+                border: 1px solid #fff;
+                outline: none;
+                flex: 1;
+            }
+        }
+        .form-box + .form-box {
+            margin-top: 20px;
+        }
+    }
+
+    @media  (max-width: 900px) {
+        .form-box {
+
+            label {
+                display: none;
+            }
+        }
+    }
+
+    .btn {
+            width: inherit;
+            margin-top: 2rem;
+            display: grid;
+
+            button {
+                width: 40%;
+                margin: 0 auto;
+                display: inline-block;
+                padding: 0.8rem 1.5rem;
+                border-radius: 30px;
+                font-size: 18px;
+                font-weight: bolder;
+                opacity: 0.8;
+            }
+        }
+
+        .btn:hover button {
+            opacity: 1;
+        }
+
+        @media (max-width: 900px) {
+            button {
+                padding: 5px 10px;
+            }
+        }
+}
